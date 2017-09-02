@@ -1,7 +1,7 @@
 const path = require("path");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const basepath = path.join(__dirname, "..")
+const basepath = path.join(__dirname, "..");
 
 module.exports = {
   "entry": {
@@ -21,6 +21,7 @@ module.exports = {
     }
   },
   "module": {
+      "noParse": /lodash/,
     "loaders": [
       {
         "exclude": [/node_modules/, /\.spec.ts?$/],
