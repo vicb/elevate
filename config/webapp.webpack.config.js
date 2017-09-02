@@ -64,7 +64,6 @@ module.exports = {
       ".css"
     ],
     "modules": [
-      "./node_modules",
       "./node_modules"
     ],
     "symlinks": true
